@@ -1,0 +1,11 @@
+<div class="post">
+    <h2>{{title}}</h2>
+    <p>Category: <strong>{{category}}</strong></p>
+    <p>Author: <strong>{{author}}</strong></p>
+    <p>{{content}}</p>
+  
+      <form>
+        <button (click)="deletePost(this.id)" type="submit" id="deleteButton"><p>Delete</p></button>
+        <button (click)="toArchieve(this.id)" type="submit" id="archiveButton"><p>Archeve</p></button>
+      </form>
+  </div>
