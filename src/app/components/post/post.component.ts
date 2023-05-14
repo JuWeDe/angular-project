@@ -12,7 +12,6 @@ export class PostComponent {
   @Input() title?: string;
   @Input() category?: string;
   @Input() content?: string;
-
   records: Post[] = [];
 
   constructor(private recordService: RecordService) {
