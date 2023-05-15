@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { RecordService } from '../../record-service.service';
+import { PostHandler } from '../../post-handler';
 
 @Component({
   selector: 'app-archeve',
@@ -7,10 +7,10 @@ import { RecordService } from '../../record-service.service';
   styleUrls: ['./archeve.component.scss'],
 })
 export class ArcheveComponent {
-  @Input() title: any;
+  @Input() title?: string;
 
   archives: any[] = [];
-  constructor(private recordService: RecordService) {
-    this.archives = recordService.archieves;
+  constructor(private ph: PostHandler) {
+    this.archives = ph.archieves;
   }
 }

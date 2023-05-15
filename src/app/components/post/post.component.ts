@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { RecordService } from '../../record-service.service';
+import { PostHandler } from '../../post-handler';
 import { Post } from '../../app.component';
 @Component({
   selector: 'app-post',
@@ -14,14 +14,14 @@ export class PostComponent {
   @Input() content?: string;
   records: Post[] = [];
 
-  constructor(private recordService: RecordService) {
-    this.records = recordService.records;
+  constructor(private ph: PostHandler) {
+    this.records = ph.records;
   }
 
   deletePost(id: number) {
-    this.recordService.deletePost(id);
+    this.ph.deletePost(id);
   }
   toArchieve(id: number) {
-    this.recordService.toArcheve(id);
+    this.ph.toArcheve(id);
   }
 }

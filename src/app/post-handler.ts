@@ -4,7 +4,7 @@ import { Post } from './app.component';
 @Injectable({
   providedIn: 'root',
 })
-export class RecordService {
+export class PostHandler {
 
   createPost(post: Post) {
     post.id = this.id;

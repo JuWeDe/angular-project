@@ -1,5 +1,5 @@
 import { Component, NgModule } from '@angular/core';
-import { RecordService } from './record-service.service';
+import { PostHandler } from './post-handler';
 export class Post {
   constructor(
     public id: number,
@@ -23,22 +23,15 @@ export class AppComponent {
   title: string = '';
   records: Post[] = [];
   archives: any[] = [];
-  
 
-  constructor(private recordService: RecordService) {
-    this.records = recordService.records;
-    this.archives = recordService.archieves;
+  constructor(private ph: PostHandler) {
+    this.records = ph.records;
+    this.archives = ph.archieves;
   }
-  
 
   createPost() {
-    if (
-      this.author &&
-      this.title &&
-      this.category &&
-      this.content
-    )
-      this.recordService.createPost(
+    if (this.author && this.title && this.category && this.content)
+      this.ph.createPost(
         new Post(this.id, this.author, this.title, this.category, this.content)
       );
   }
