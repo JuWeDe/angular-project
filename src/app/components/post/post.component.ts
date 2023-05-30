@@ -21,7 +21,7 @@ export class PostComponent {
   deletePost(id: number) {
     this.ph.deletePost(id);
   }
-  toArchieve(id: number) {
-    this.ph.toArcheve(id);
+  toArchive(id: number) {
+    this.ph.toArchive(id);
   }
 }

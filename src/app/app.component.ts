@@ -26,7 +26,7 @@ export class AppComponent {
 
   constructor(private ph: PostHandler) {
     this.records = ph.records;
-    this.archives = ph.archieves;
+    this.archives = ph.archives;
   }
 
   createPost() {

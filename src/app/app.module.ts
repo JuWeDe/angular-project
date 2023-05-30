@@ -7,13 +7,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PostComponent } from './components/post/post.component';
-import { ArcheveComponent } from './components/archeve/archeve.component';
+import { ArchiveComponent } from './components/archive/archive.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     PostComponent,
-    ArcheveComponent,
+    ArchiveComponent,
   ],
   imports: [BrowserModule, MatIconModule, MatToolbarModule, FormsModule],
   providers: [],
