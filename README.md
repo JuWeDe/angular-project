@@ -3,9 +3,10 @@ Course work "Definitely Not a LiveJournal"
 Some screenshots
 
 on openning:
-![onCreate](https://github.com/JuWeDe/angular-project/assets/78319818/2cd74e2a-03f1-4266-bcee-4fba8c78692d)
+![1](https://github.com/JuWeDe/angular-project/assets/78319818/2ecf4dba-701a-42e4-9ec4-4e0e58426276)
 on posting:
-![created](https://github.com/JuWeDe/angular-project/assets/78319818/418b6e23-baec-4bba-9e9d-aa175d1f30a3)
+![2](https://github.com/JuWeDe/angular-project/assets/78319818/2ce4ee1f-772e-484c-bf42-0375eef8614b)
 on moving to archeve:
-![archived](https://github.com/JuWeDe/angular-project/assets/78319818/ff958d08-7d28-4171-bd99-fc558e7566c1)
+![3](https://github.com/JuWeDe/angular-project/assets/78319818/105fb496-96be-4602-9891-16596b5485ec)
+
 
